@@ -3,10 +3,12 @@
     max-width: 80%;
   }
   
-  .title {
+ .title {
     font-weight: bold;
-  }
+    font-size: 2em;
+    margin-bottom: 16px;
   
+  }
   .list {
     list-style: none;
     padding: 0;

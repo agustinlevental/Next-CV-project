@@ -14,9 +14,10 @@ export default function About() {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.header}>
+      <h1 className={styles.title}>
         Sobre mí
       </h1>
+      <br></br>
       <AboutMeDescription />
       <Button className={styles.button} onClick={handleShowExperienceClick}>
         {!showExperience ? "Conocer mis experiencias" : "Ocultar Experiencias"}
