@@ -1,0 +1,19 @@
+.container {
+    max-width: 80%;
+    margin: 0px
+  }
+  
+  .title {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 16px;
+  }
+  
+  .button {
+    margin-top: 16px;
+  }
+  
+  .experience {
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,27 @@
+.form {
+    max-width: 250px;
+  }
+  
+  .field {
+    margin-bottom: 16px;
+  }
+  
+  .input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  

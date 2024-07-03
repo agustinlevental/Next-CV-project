@@ -1,0 +1,40 @@
+
+.container {
+    max-width: 80%;
+  }
+  
+  .title {
+    font-weight: bold;
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .listItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .red {
+    color: red;
+  }
+  
+  .black {
+    color: black;
+  }
+  
