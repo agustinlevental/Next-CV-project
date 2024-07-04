@@ -4,6 +4,7 @@ import React, { useState, ChangeEvent } from 'react';
 import { useLikes, Interest } from '@/app/context/LikesContext';
 import styles from './Interests.module.css';
 import { Button } from '@/app/ui/button/button';
+import { TrashIcon, PencilIcon } from '@heroicons/react/24/outline';
 
 const Intereses: React.FC = () => {
   const { interests, addInterest, modifyInterest, deleteInterest } = useLikes();
@@ -46,8 +47,8 @@ const Intereses: React.FC = () => {
           <li key={interest.id} className={styles.listItem}>
             <div className={styles.textContainer}>{interest.name}</div>
             <div className={styles.buttonContainer}>
-              <Button onClick={() => handleDeleteInterest(interest.id)} className={styles.button}>Eliminar</Button>
-              <Button onClick={() => handleEditClick(interest)} className={styles.button}>Modificar</Button>
+            <Button onClick={() => handleEditClick(interest)} className={styles.button}><PencilIcon className={styles.icon} /></Button>
+            <Button onClick={() => handleDeleteInterest(interest.id)} style={{backgroundColor:"#B22222"}}className={styles.button }  > <TrashIcon className={`${styles.icon}` } /></Button>
             </div>
           </li>
         ))}

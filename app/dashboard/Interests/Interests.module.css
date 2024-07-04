@@ -37,11 +37,16 @@
 }
 
 .button {
-  background: none;
+  background: red;
   border: none;
   cursor: pointer;
 }
 
+.icon {
+  width: 24px;
+  height: 24px;
+
+}
 .input {
   width: calc(100% - 16px);
   padding: 4px;
