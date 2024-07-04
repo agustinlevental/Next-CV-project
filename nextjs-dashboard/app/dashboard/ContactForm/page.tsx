@@ -1,15 +1,27 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { validateName, validateEmail } from '@/app/lib/utils';
 import styles from './ContactForm.module.css';
 import { Button } from '@/app/ui/button';
 
-export default function ContactForm() {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [errors, setErrors] = useState({ name: '', email: '', message: '' });
+interface FormData {
+  name: string;
+  email: string;
+  message: string;
+}
 
-  const handleChange = (e) => {
+interface FormErrors {
+  name: string;
+  email: string;
+  message: string;
+}
+
+export default function ContactForm() {
+  const [formData, setFormData] = useState<FormData>({ name: '', email: '', message: '' });
+  const [errors, setErrors] = useState<FormErrors>({ name: '', email: '', message: '' });
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
 
@@ -35,7 +47,7 @@ export default function ContactForm() {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const isNameValid = validateName(formData.name);
     const isEmailValid = validateEmail(formData.email);
@@ -48,7 +60,7 @@ export default function ContactForm() {
         message: isMessageValid ? '' : 'El mensaje no puede estar vacío',
       });
     } else {
-      // Handle successful form submission
+    
       alert('Formulario enviado con éxito');
     }
   };

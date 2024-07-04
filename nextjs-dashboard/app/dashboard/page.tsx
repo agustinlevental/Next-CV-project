@@ -5,10 +5,10 @@ import { Button } from '../ui/button';
 import AboutMeDescription from './AboutMeDescription';
 import Experience from './Experience';
 
-export default function About() {
-  const [showExperience, setShowExperience] = useState(false);
+const About: React.FC = () => {
+  const [showExperience, setShowExperience] = useState<boolean>(false);
 
-  const handleShowExperienceClick = () => {
+  const handleShowExperienceClick = (): void => {
     setShowExperience(!showExperience);
   };
 
@@ -25,4 +25,6 @@ export default function About() {
       {showExperience && <div className={styles.experience}><Experience /></div>}
     </div>
   );
-}
+};
+
+export default About;

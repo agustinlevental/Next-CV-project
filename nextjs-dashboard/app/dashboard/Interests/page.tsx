@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, ChangeEvent } from 'react';
 import { useLikes, Interest } from '@/app/context/LikesContext';
 import styles from './Interests.module.css';
 import { Button } from '@/app/ui/button';
@@ -34,6 +34,10 @@ const Intereses: React.FC = () => {
     setNewInterest(interest.name);
   };
 
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setNewInterest(e.target.value);
+  };
+
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Intereses</h1>
@@ -51,7 +55,7 @@ const Intereses: React.FC = () => {
       <input
         type="text"
         value={newInterest}
-        onChange={(e) => setNewInterest(e.target.value)}
+        onChange={handleChange}
         className={styles.input}
       />
       {editingInterest ? (

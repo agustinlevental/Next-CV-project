@@ -1,7 +1,12 @@
+import React, { ReactNode } from 'react';
 import SideNav from "../ui/dashboard/sidenav";
 import styles from './layout.module.css';
 
-export default function Layout({ children }) {
+interface LayoutProps {
+  children: ReactNode;
+}
+
+export default function Layout({ children }: LayoutProps) {
   return (
     <div className={styles.container}>
       <SideNav />
