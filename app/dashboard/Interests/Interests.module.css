@@ -71,7 +71,6 @@
   
   .buttonContainer {
     width: 100%;
-    justify-content: flex-end;
     margin: 8px 0px 0px;
   }
 }

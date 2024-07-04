@@ -28,12 +28,16 @@ Un [reducer](https://reactjs.org/docs/hooks-reference.html#usereducer) es una fu
 Sigue estos pasos para instalar y ejecutar el proyecto localmente:
 
 git clone https://github.com/agustinlevental/security.git
-cd security
+
+cd ./security
+
 npm install
+
 npm run dev
 
 ## Test
 Se utilizó Jest y Testing Library para realizar test y comprobar que el contexto pase adecuadamente los intereses a los componentes hijos del Provider, y para corroborar que funcionen bien las acciones despachadas por el Reducer.
 
 Escribe el siguiente comando en la consola para ejecutar el test:
+
 npm test
