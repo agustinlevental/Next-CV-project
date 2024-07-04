@@ -3,7 +3,13 @@ import React from 'react';
 const Experience = () => {
   return (
     <div style={{width:"100%"}}>
-      <h2>Experiencia Profesional</h2>
+      <h2 style={{
+    display: "flex",
+    justifyContent: "center",
+    fontWeight: "bold",
+    fontSize: "2em",
+    marginBottom: "16px",
+  }}>Experiencia Profesional</h2>
       <div>
         <h3>05/2022 - Developer - Diveria</h3>
         <ul>

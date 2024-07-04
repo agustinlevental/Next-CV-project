@@ -1,42 +1,72 @@
 
 .container {
-    max-width: 80%;
-  }
-  
- .title {
-    font-weight: bold;
-    font-size: 2em;
-    margin-bottom: 16px;
-  
-  }
-  .list {
-    list-style: none;
-    padding: 0;
-  }
-  
+  max-width: 80%;
+  margin: auto;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 16px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.textContainer {
+  flex-grow: 1;
+  min-width: 0;
+  word-wrap: break-word;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0; 
+  margin: 10px 15px;
+}
+
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.input {
+  width: calc(100% - 16px);
+  padding: 4px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+}
+
+.suggestButton {
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media (max-width: 768px) {
   .listItem {
-    display: flex;
-    align-items: center;
-    margin-bottom: 8px;
+    flex-direction: column;
+    align-items: flex-start; 
   }
   
-  .button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-left: 8px;
+  .buttonContainer {
+    width: 100%;
+    justify-content: flex-end;
+    margin: 8px 0px 0px;
   }
-  
-  .icon {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .red {
-    color: red;
-  }
-  
-  .black {
-    color: black;
-  }
-  
+}

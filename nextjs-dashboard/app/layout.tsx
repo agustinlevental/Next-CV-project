@@ -1,5 +1,6 @@
 import "./ui/global.css"
 import { montserrat } from "./ui/fonts";
+import { LikesProvider } from "./context/LikesContext";
 export default function RootLayout({
   children,
 }: {
@@ -7,8 +8,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-    
-            <body className={`${montserrat.className} antialiased`}>{children}</body>
+    <LikesProvider>
+    <body className={`${montserrat.className} antialiased`}>{children}</body>
+    </LikesProvider>
+           
     </html>
   );
 }
