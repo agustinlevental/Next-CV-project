@@ -1,6 +1,5 @@
-import Link from 'next/link';
 import NavLinks from '@/app/ui/dashboard/nav-links';
-import styles from './sidenav.module.css';
+import styles from './Navigator.module.css';
 
 export default function SideNav() {
   return (

@@ -1,7 +1,4 @@
-interface Interest {
-    id: number;
-    name: string;
-  }
+import { Interest } from "./LikesContext";
   
   interface State {
     interests: Interest[];

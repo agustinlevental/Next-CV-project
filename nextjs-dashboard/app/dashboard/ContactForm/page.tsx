@@ -3,7 +3,7 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { validateName, validateEmail } from '@/app/lib/utils';
 import styles from './ContactForm.module.css';
-import { Button } from '@/app/ui/button';
+import { Button } from '@/app/ui/button/button';
 
 interface FormData {
   name: string;

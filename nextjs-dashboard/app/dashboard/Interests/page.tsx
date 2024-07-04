@@ -3,7 +3,7 @@
 import React, { useState, ChangeEvent } from 'react';
 import { useLikes, Interest } from '@/app/context/LikesContext';
 import styles from './Interests.module.css';
-import { Button } from '@/app/ui/button';
+import { Button } from '@/app/ui/button/button';
 
 const Intereses: React.FC = () => {
   const { interests, addInterest, modifyInterest, deleteInterest } = useLikes();

@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from 'react';
 import styles from './About/About.module.css';
-import { Button } from '../ui/button';
-import AboutMeDescription from './AboutMeDescription';
-import Experience from './Experience';
+import { Button } from '../ui/button/button';
+import AboutMeDescription from './About/AboutMeDescription';
+import Experience from './About/Experience';
 
 const About: React.FC = () => {
   const [showExperience, setShowExperience] = useState<boolean>(false);

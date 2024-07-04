@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import SideNav from "../ui/dashboard/sidenav";
+import SideNav from "../ui/dashboard/Navigator";
 import styles from './layout.module.css';
 
 interface LayoutProps {
